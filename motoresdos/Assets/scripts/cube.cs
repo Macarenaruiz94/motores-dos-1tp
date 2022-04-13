@@ -6,16 +6,16 @@ public class cube : MonoBehaviour
 {
     void Start()
     {
-        GenerarForma();
+        GenerarColor();
     }
 
-    public void GenerarForma()
+    public void GenerarColor()
     {
-        GetComponent<Renderer>().sharedMaterial.forma = Random.
+        GetComponent<Renderer>().sharedMaterial.color = Random.ColorHSV();
     }
 
     public void Reset()
     {
-        GetComponent<Renderer>().sharedMaterial.forma = Forma.cube;
+        GetComponent<Renderer>().sharedMaterial.color = Color.white;
     }
 }
